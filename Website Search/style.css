@@ -29,11 +29,17 @@ input {
     
 
 }
+.label {
+    user-select: none ;
+}
 
 .card1 {
     border:1px solid black;
     background-color: rgb(74, 74, 85);
     padding:.5rem;
+}
+.card1:hover{
+    background-color: rgb(27, 25, 25);
 }
 .card1 > .header {
     margin-bottom: .25rem;

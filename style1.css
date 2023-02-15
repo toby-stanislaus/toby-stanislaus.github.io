@@ -10,7 +10,8 @@ body {
 .writing {
     font-size: 30px;
     text-align: left;
-    color: azure
+    color: azure;
+    user-select: none ;
 }
 
 .container {

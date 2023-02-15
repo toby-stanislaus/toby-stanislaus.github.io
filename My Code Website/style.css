@@ -52,11 +52,17 @@ body {
 }
 
 h1 {
+    user-select: none ;
     font-size:30px;
     color:rgb(122, 120, 233)
 }
 
+.h2 {
+    user-select: none ;
+}
+
 .title {
+    user-select: none ;
     font-size:70px;
     color:rgb(122, 120, 233)
 }
