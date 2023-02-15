@@ -80,5 +80,6 @@ h2 {
 
 
 .image {
+    user-select: none;
     margin:5px;
 }
