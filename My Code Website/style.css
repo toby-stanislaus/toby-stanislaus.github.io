@@ -61,6 +61,7 @@ h1 {
     color:rgb(122, 120, 233)
 }
 .textnimage {
+    width:auto;
     display: flex;
     flex-direction: row;
 }
