@@ -1,0 +1,108 @@
+
+body {
+    background-color:rgb(60, 62, 65);
+    color:#ffffff;
+    font-family: "Poppins", sans-serif;
+    padding:0;
+    margin:0;
+    background-repeat: no-repeat;
+}
+.writing {
+    font-size: 30px;
+    text-align: left;
+    color: azure
+}
+
+.container {
+    width: 1500px;
+    height: 50px;
+    display: flex;
+    
+}
+
+.test1 {
+    width: 300px;
+    height:70px;
+    background-color: rgb(80, 82, 85);
+    border-spacing:10px;
+    border: 1px solid rgb(51, 51, 51);
+    margin: 1 solid;
+    font-size:40px;
+    color:rgb(0, 0, 0);
+    
+}
+
+.test1:hover{
+    background-color: rgb(36, 39, 41);
+}
+
+
+h2 {
+    user-select: none ;
+    color:rgb(122, 120, 233);
+    
+    font-size:500%;
+}
+h1 {
+    user-select: none ;
+    color:rgb(122, 120, 233);
+    font-size:900%;
+}
+
+.hidden {
+    opacity:0;
+    filter:blur(5px);
+    transform: translateX(-25%);
+    transition: all 1s;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.show {
+    opacity:1;
+    filter:blur(0);
+    transform:translateX(0);
+}
+
+
+
+.roundedA {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+
+
+.parent {
+    height: 235px;
+    width: 1200px;
+}
+
+
+
+.child {
+    height: 50%;
+    width:1400;
+    transition: transform 5s;
+}
+
+.parent:hover .child {
+    transform:translateX(100%);
+}
+
+
+.textnimage {
+    width:1615px;
+    display: flex;
+    height:fit-content;
+}
+
