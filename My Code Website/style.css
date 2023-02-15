@@ -57,7 +57,7 @@ h1 {
     color:rgb(122, 120, 233)
 }
 
-.h2 {
+h2 {
     user-select: none ;
 }
 
@@ -77,12 +77,8 @@ h1 {
 .nextToImage {
     margin-bottom:100px
 }
-.imagetext {
-    flex:1;
-    padding:20px;
-}
+
 
 .image {
-    flex: 1;
     margin:5px;
 }
