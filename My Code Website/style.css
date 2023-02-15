@@ -61,9 +61,8 @@ h1 {
     color:rgb(122, 120, 233)
 }
 .textnimage {
-    width:1500px;
     display: flex;
-    height:fit-content;
+    flex-direction: row;
 }
 .margin {
     margin:5px;
