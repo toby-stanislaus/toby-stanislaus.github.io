@@ -70,3 +70,12 @@ h1 {
 .nextToImage {
     margin-bottom:100px
 }
+.imagetext {
+    flex:1;
+    padding:20px;
+}
+
+.image {
+    flex: 1;
+    margin:5px;
+}

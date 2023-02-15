@@ -45,7 +45,7 @@
         <section class="hidden">
             <section class="nextToImage">
                 <h1>Boat Outliner</h1>
-                <h2>Then, it will give me coordinates to an outline of the boat (to crop it from the rest of the image)
+                <h2 class="imagetext">Then, it will give me coordinates to an outline of the boat (to crop it from the rest of the image)
                     using a linear regression model, with help from VGG16. This is to make it easier for the later models to make correct decisions.
                     This model is trained on about a couple thousand training images. 
                     This is done as illustrated here:
@@ -59,25 +59,25 @@
                 </h2>
             
         </section>
-        <img src="\My Code Website\Images\Boat Outline.png" class="margin">
+        <img src="\My Code Website\Images\Boat Outline.png" class="image">
     </div>
     </section>
     
     <div class="textnimage">
         <section class="hidden">
             <h1>Boat Num Outliner Model</h1>  
-            <h2>Also from that cropped image, I would draw an outline, with another VGG16 model, onto the boat number on the sail, as shown in this picture. 
+            <h2 class="imagetext">Also from that cropped image, I would draw an outline, with another VGG16 model, onto the boat number on the sail, as shown in this picture. 
                 This would be again, cropped from the boat, and passed to the next model.
             </h2>
         </section>
-        <img src="\My Code Website\Images\Boat Num Outline.png" class = "margin">
+        <img src="\My Code Website\Images\Boat Num Outline.png" class = "image">
     </div>
 
     
     <div class="textnimage">
         <section class="hidden">
             <h1>Boat Num Divider</h1>
-            <h2>This will take the cropped boat number from the cropped boat, and will use opencv contours, rather than a ML model, to 
+            <h2 class="imagetext">This will take the cropped boat number from the cropped boat, and will use opencv contours, rather than a ML model, to 
                 further split all numbers into individual numbers, as shown in the image to the right,
                 which could then passed to the next number reader model, which
                 actually reads each number into the system.
@@ -90,16 +90,16 @@
 
         <section class="hidden">
             <h1>Number Reader</h1>
-            <h2>This model would get all cropped numbers from the cropped boat number, and read each one. There is a category for "None" as it is possible for the 
+            <h2 class="imagetext">This model would get all cropped numbers from the cropped boat number, and read each one. There is a category for "None" as it is possible for the 
                 contours to pick up random black lines from the cropped boat number, as shown by the furthest right image. 
                 Then, the number (869) is passed to the step in the process.
             </h2>
         </section>
 
-        <img src="\My Code Website\Images\8.png">
-        <img src="\My Code Website\Images\6.png">
-        <img src="\My Code Website\Images\9.png">
-        <img src="\My Code Website\Images\Bad image.png">
+        <img src="\My Code Website\Images\8.png" class="image">
+        <img src="\My Code Website\Images\6.png" class="image">
+        <img src="\My Code Website\Images\9.png" class="image">
+        <img src="\My Code Website\Images\Bad image.png" class="image">
     </div>
 
     <section class="hidden">
