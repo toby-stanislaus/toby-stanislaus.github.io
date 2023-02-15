@@ -57,7 +57,7 @@ h1 {
     color:rgb(122, 120, 233)
 }
 
-h2 {
+.noSelect {
     user-select: none ;
 }
 
@@ -80,6 +80,5 @@ h2 {
 
 
 .image {
-    user-select: none;
     margin:5px;
 }
