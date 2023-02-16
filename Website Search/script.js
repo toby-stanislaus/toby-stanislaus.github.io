@@ -19,10 +19,8 @@ searchInput.addEventListener("input",(e)=>{
 
 
 
-fetch("https://jsonplaceholder.typicode.com/users")
-    console.log(res)
+fetch("https://rhvzwuhewi.execute-api.eu-west-2.amazonaws.com/dev/graphql")
     .then(res => res.json())
-    console.log(res)
     .then(data => {
         users =data.map(user => {
             const card = userCardTemplate.content.cloneNode(true).children[0];
