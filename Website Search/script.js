@@ -31,7 +31,9 @@ fetch("https://rhvzwuhewi.execute-api.eu-west-2.amazonaws.com/dev/graphql", {
       query {
         allHelms{
           name
+          boatName
           boatNumber
+          pY
         }
       }
     `,
@@ -44,8 +46,10 @@ fetch("https://rhvzwuhewi.execute-api.eu-west-2.amazonaws.com/dev/graphql", {
             const header = card.querySelector("[data-header]");
             const body =card.querySelector("[data-body]");
             header.textContent=helm.name;
+            body.textContent=helm.boatName;
             body.textContent=helm.boatNumber;
+            body.textContent=helm.pY;
             userCardContainer.append(card);
-            return { name: helm.name, boatNumber: helm.boatNumber, element: card};
+            return { name: helm.name, boatNumber: helm.boatNumber,boatName: helm.boatName,pY: helm.pY, element: card};
         })
     })
