@@ -47,13 +47,13 @@ p {
     user-select: none;
 }
 .currentTab {
-    width: 300px;
+    width: 195px;
     height:70px;
     background-color: rgb(39, 38, 38);
     border-spacing:10px;
     border: 1px solid rgb(51, 51, 51);
     margin: 1 solid;
-    font-size:40px;
+    font-size:20px;
     color:rgb(0, 0, 0);
     
 }
