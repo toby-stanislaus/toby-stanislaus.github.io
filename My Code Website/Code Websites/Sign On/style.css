@@ -34,3 +34,14 @@ h1{
     font-size:40px;
     color:rgb(122, 120, 233)
 }
+
+.textnimage {
+    width:auto;
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    color:rgb(122, 120, 233);
+    margin:5px;
+}
