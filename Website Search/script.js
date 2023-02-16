@@ -2,33 +2,49 @@ const userCardTemplate=document.querySelector("[data-user-template]");
 const userCardContainer=document.querySelector("[data-user-cards-container]");
 const searchInput=document.querySelector("[data-search]");
 
-let users=[];
+let helms=[];
 
 searchInput.addEventListener("input",(e)=>{
     const value = e.target.value;
-    users.forEach(user=>{
+    helms.forEach(helm=>{
         const isVisible = 
-        user.name.toLowerCase().includes(value) || user.email.toLowerCase().includes(value) || //lower case check letters
-        user.name.toUpperCase().includes(value) || user.email.toUpperCase().includes(value);   // upper case check letters
+        helm.name.toLowerCase().includes(value) || helm.boatNumber.toLowerCase().includes(value) || //lower case check letters
+        helm.name.toUpperCase().includes(value) || helm.boatNumber.toUpperCase().includes(value);   // upper case check letters
         
 
-        user.element.classList.toggle("hide",!isVisible)
+        helm.element.classList.toggle("hide",!isVisible)
     })
-    console.log(users);
+    console.log(helms);
 })
 
 
 
-fetch("https://jsonplaceholder.typicode.com/users")
+fetch("https://rhvzwuhewi.execute-api.eu-west-2.amazonaws.com/dev/graphql", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
+  body: JSON.stringify({
+    query: `
+      query {
+        allHelms{
+          name
+          boatNumber
+        }
+      }
+    `,
+  }),
+})
     .then(res => res.json())
     .then(data => {
-        users =data.map(user => {
+        helms = data.data.allHelms.map(helm => {
             const card = userCardTemplate.content.cloneNode(true).children[0];
             const header = card.querySelector("[data-header]");
             const body =card.querySelector("[data-body]");
-            header.textContent=user.name;
-            body.textContent=user.email;
+            header.textContent=helm.name;
+            body.textContent=helm.boatNumber;
             userCardContainer.append(card);
-            return { name: user.name, email: user.email, element: card};
+            return { name: helm.name, boatNumber: helm.boatNumber, element: card};
         })
     })
