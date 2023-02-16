@@ -19,7 +19,7 @@ searchInput.addEventListener("input",(e)=>{
 
 
 
-fetch("https://rhvzwuhewi.execute-api.eu-west-2.amazonaws.com/dev/graphql")
+fetch("https://jsonplaceholder.typicode.com/users")
     .then(res => res.json())
     .then(data => {
         users =data.map(user => {
