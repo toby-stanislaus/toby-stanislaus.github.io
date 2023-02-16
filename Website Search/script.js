@@ -20,7 +20,9 @@ searchInput.addEventListener("input",(e)=>{
 
 
 fetch("https://jsonplaceholder.typicode.com/users")
+    console.log(res)
     .then(res => res.json())
+    console.log(res)
     .then(data => {
         users =data.map(user => {
             const card = userCardTemplate.content.cloneNode(true).children[0];
