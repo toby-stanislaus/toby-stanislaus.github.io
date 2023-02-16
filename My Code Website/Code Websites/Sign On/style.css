@@ -44,4 +44,5 @@ h1{
 p {
     color:rgb(122, 120, 233);
     margin:5px;
+    user-select: none;
 }
