@@ -95,19 +95,20 @@ h1 {
 
 button {
     position: relative;
-    padding: 1em 1.8em;
+    padding: 40px 85px;
     outline: none;
     border: 1px solid #303030;
     background: #212121;
     color: #ae00ff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 15px;
+    font-size: 40px;
     overflow: hidden;
     transition: 0.2s;
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
+    
    }
    
    button:hover {
@@ -189,4 +190,5 @@ button {
     transition: none;
     transition-delay: none;
    }
+   
    
