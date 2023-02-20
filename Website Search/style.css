@@ -59,7 +59,7 @@ input {
 
 .container {
     width: 1500px;
-    height: 50px;
+    height: 170px;
     display: flex;
     
 }
@@ -71,12 +71,7 @@ input {
     background-color: rgb(36, 39, 41);
 }
 
-.container {
-    width: 1500px;
-    height: 50px;
-    display: flex;
-    
-}
+
 .test1 {
     width: 300px;
     height:70px;
