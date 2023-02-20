@@ -25,14 +25,14 @@ h1{
 
 button {
     position: relative;
-    padding: 40px 85px;
+    width:200px;
     outline: none;
     border: 1px solid #303030;
     background: #212121;
     color: #ae00ff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 10px;
+    font-size: 7px;
     overflow: hidden;
     transition: 0.2s;
     border-radius: 20px;
