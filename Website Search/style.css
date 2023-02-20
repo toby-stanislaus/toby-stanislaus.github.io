@@ -29,6 +29,12 @@ input {
     
 
 }
+.container {
+    width: 1500px;
+    height: 170px;
+    display: flex;  
+}
+
 .label {
     user-select: none ;
 }
@@ -79,7 +85,7 @@ input {
     border-spacing:10px;
     border: 1px solid rgb(51, 51, 51);
     margin: 1 solid;
-    font-size:40px;
+    font-size:30px;
     color:rgb(0, 0, 0);
     
 }
