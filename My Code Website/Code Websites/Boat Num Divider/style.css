@@ -10,18 +10,19 @@ body {
 
 
 
-.container {
-    width: 1500px;
-    height: 170px;
-    display: flex;
-    
-}
+
 h1{
     user-select: none;
     font-size:40px;
     color:rgb(122, 120, 233)
 }
 
+.container {
+    width: 1500px;
+    height: 170px;
+    display: flex;
+    
+}
 
 button {
     position: relative;

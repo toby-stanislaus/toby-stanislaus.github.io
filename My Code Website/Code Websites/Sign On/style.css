@@ -7,13 +7,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
-.container {
-    width: 1500px;
-    height: 50px;
-    display: flex;
-    
-}
 h1{
     user-select: none;
     font-size:40px;
@@ -32,16 +25,24 @@ p {
     user-select: none;
 }
 
+.container {
+    width: 1500px;
+    height: 170px;
+    display: flex;
+    
+}
+
 button {
     position: relative;
-    padding: 40px 85px;
+    width:200px;
+    height:100px;
     outline: none;
     border: 1px solid #303030;
     background: #212121;
     color: #ae00ff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 10px;
+    font-size: 20px;
     overflow: hidden;
     transition: 0.2s;
     border-radius: 20px;
