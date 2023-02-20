@@ -26,6 +26,7 @@ h1{
 button {
     position: relative;
     width:200px;
+    height:100px;
     outline: none;
     border: 1px solid #303030;
     background: #212121;
