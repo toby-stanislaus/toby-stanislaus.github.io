@@ -15,14 +15,14 @@ body{
   height:60px;
   margin-right:0px;
   padding:10px 30px 10px 30px;
-  float:right;
+  float: right;
   margin-right:2px;
   user-select:none;
+  white-space: nowrap;
 }
 
 .project-button:hover,
-.titleText:hover
-{
+.titleText:hover{
   background-color: rgb(255, 194, 169);
 }
 
@@ -30,7 +30,7 @@ body{
   background-color: rgb(34, 36, 36);
   height:62px;
   width:100%;
-  white-space: nowrap;
+  overflow: hidden;
   
 }
 
@@ -56,10 +56,12 @@ body{
 
 .introTitle{
   font-size:30px;
+  user-select: none;
 }
 
 .introText{
   font-size:15px;
+  user-select: none;
 }
 
 
