@@ -1,0 +1,66 @@
+body{
+  background-color:rgb(60, 62, 65);
+  margin:0;
+  font-family:sans-serif;
+  color:white;
+}
+
+.project-button {
+  background-color: transparent;
+  color:white;
+  border:none;
+  font-size:30px;
+  border-radius: 15px;
+  cursor: pointer;
+  height:60px;
+  margin-right:0px;
+  padding:10px 30px 10px 30px;
+  float:right;
+  margin-right:2px;
+  user-select:none;
+}
+
+.project-button:hover,
+.titleText:hover
+{
+  background-color: rgb(255, 194, 169);
+}
+
+.headLine-buttons {
+  background-color: rgb(34, 36, 36);
+  height:62px;
+  width:100%;
+  white-space: nowrap;
+  
+}
+
+.titleText{
+  white-space: nowrap;
+  font-size:50px;
+  color:white;
+  float:left;
+  user-select:none;
+  border: none;
+  background-color: transparent;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+
+
+.authorText{
+  user-select:none;
+}
+
+.introTitle{
+  font-size:30px;
+}
+
+.introText{
+  font-size:15px;
+}
+
+
+
