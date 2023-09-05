@@ -12,3 +12,4 @@ function updateCalculation(value) {
 function saveCalculation() {
   localStorage.setItem('calculation', calculation);
 }
+

@@ -1,9 +1,12 @@
-
-setInterval(() => {
-  if (document.title==='Projects'){
-    document.title='Projects - By Toby Stanislaus';
+const oldTitle=document.title;
+i=0;
+intervalID=setInterval(() => {
+  if (i<3){
+    document.title=oldTitle;
+    i+=1;
   }else{
-    document.title='Projects';
+    document.title=`${oldTitle} - By Toby Stanislaus`;
+    i=0;
   }
-},1000);
+},2000);
 
