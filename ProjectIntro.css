@@ -5,21 +5,23 @@ body{
   color:white;
 }
 
+
 .project-button {
   background-color: transparent;
   color:white;
   border:none;
-  font-size:30px;
+  font-size:100%;
   border-radius: 15px;
   cursor: pointer;
   height:60px;
-  margin-right:0px;
-  padding:10px 30px 10px 30px;
+  padding:5px 15px 5px 15px;
   float: right;
   margin-right:2px;
   user-select:none;
   white-space: nowrap;
+  width:20%;
 }
+
 
 .project-button:hover,
 .titleText:hover{
@@ -29,9 +31,9 @@ body{
 .headLine-buttons {
   background-color: rgb(34, 36, 36);
   height:62px;
-  width:100%;
+  width:100% -1px;
+  padding:2px;
   overflow: hidden;
-  
 }
 
 .titleText{
@@ -57,12 +59,88 @@ body{
 .introTitle{
   font-size:30px;
   user-select: none;
+  color:rgb(99, 204, 150)
 }
 
 .introText{
-  font-size:15px;
+  font-size:23px;
   user-select: none;
 }
 
 
+.WEX,
+.coding,
+.activities,
+.button-child {
+  width:200px;
+  height:200px;
+  border:none;
+  margin:10px;
+  border-radius:100px;
+  user-select: none;
+  transition: transform 1s ease-in-out;
+  margin:10px 170px 50px 160px;
+  cursor:pointer;
+}
+
+.button-child {
+  height:150px;
+  width:150px;
+  border-radius: 100px;
+  border:none;
+  user-select: none;
+  
+}
+
+
+.WEX:hover,
+.coding:hover,
+.activities:hover,
+.button-child:hover{
+  transform:scaleX(1.5) scaleY(1.5);
+  background-color: grey;
+}
+
+
+
+.button-child-container,
+.parent-buttons{
+  white-space: nowrap;
+  user-select: none;
+}
+
+.button-child-WEX,
+.button-child-coding,
+.button-child-activities{
+  visibility: hidden;
+  user-select: none;
+}
+
+.button-child{
+  position: relative;
+
+}
+
+.WEXimage {
+  float:right;
+  height:650px;
+  width:60%;
+  border-radius: 10px;
+  
+}
+
+.text-with-image {
+  overflow: hidden;
+  height:650px;
+
+}
+
+.float-left {
+  width:40%;
+  float:left;
+}
+
+.highlighted-points{
+  color:rgb(131, 241, 131);
+}
 

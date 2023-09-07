@@ -1,0 +1,9 @@
+I did a collaborative teamworking project with my team of three people, following the Agile structure, having to present our work at the end of the week, being a working Raspberry Pi Pico Traffic light.
+
+The Project required us to use Python to make results in the real world.
+We used resistors, buttons, jumper cables and LEDs to make working traffic lights,simulating the real world of trains in the real life,
+using button presses to act as axles running over the tracks, which would then change the lights behind it to prevent other trains running into the back of it and avoid collision. 
+As a group, we made the code adaptable to different types of trains with different amounts of axles.
+In addition, I was given numerous talks over the week by Siemens Specialists about the engineering feats of trains and physics of trains. 
+Over the week, an indepth tour of the site was given and most importantly a look into the work week. 
+
