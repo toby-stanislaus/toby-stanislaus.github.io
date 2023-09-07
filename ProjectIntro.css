@@ -53,13 +53,16 @@ body{
 
 
 .authorText{
+  padding-bottom:30px;
   user-select:none;
 }
 
-.introTitle{
-  font-size:30px;
+.title{
+  font-size:60px;
   user-select: none;
-  color:rgb(99, 204, 150)
+  color:rgb(250, 121, 117);
+  border:none;
+  padding-bottom:10px;
 }
 
 .introText{
@@ -79,7 +82,7 @@ body{
   border-radius:100px;
   user-select: none;
   transition: transform 1s ease-in-out;
-  margin:10px 170px 50px 160px;
+  margin:50px 170px 50px 160px;
   cursor:pointer;
 }
 
@@ -89,17 +92,12 @@ body{
   border-radius: 100px;
   border:none;
   user-select: none;
+  margin-top: 50px;
+  margin-left:199px;
   
 }
 
 
-.WEX:hover,
-.coding:hover,
-.activities:hover,
-.button-child:hover{
-  transform:scaleX(1.5) scaleY(1.5);
-  background-color: grey;
-}
 
 
 
@@ -112,18 +110,25 @@ body{
 .button-child-WEX,
 .button-child-coding,
 .button-child-activities{
-  visibility: hidden;
+
   user-select: none;
 }
 
-.button-child{
-  position: relative;
+
+.first-button{
+  transform:translateX(-370px);
+}
+.second-button{
+  transform:translateX(-900px);
+}
+.third-button{
+  transform:translateX(-1400px);
 
 }
 
 .WEXimage {
   float:right;
-  height:650px;
+  height:750px;
   width:60%;
   border-radius: 10px;
   
@@ -131,7 +136,7 @@ body{
 
 .text-with-image {
   overflow: hidden;
-  height:650px;
+  height:750px;
 
 }
 
@@ -141,6 +146,7 @@ body{
 }
 
 .highlighted-points{
-  color:rgb(131, 241, 131);
+  font-size:40px;
+  color:rgb(241, 190, 131);
 }
 

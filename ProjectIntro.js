@@ -23,7 +23,7 @@ const activitiesbutton=document.getElementById('activities');
 let windowInnerWidth=window.innerWidth;
 let windowInnerHeight=window.innerHeight;
 let textShown=false;
-
+let wipeParentsID;
 
 WEXbutton.style.transform="scaleX(200px) scaleY(200px)";
 i=0;
@@ -62,51 +62,48 @@ function fetchData(filePath) {
     });
 }
 
-function wipeAllButtons(){
-  document.getElementById('WEX').style.visibility='hidden';
+function changeParentButtons(state){
+  document.getElementById('WEX').style.visibility=state;
+  document.getElementById('coding').style.visibility=state;
+  document.getElementById('activities').style.visibility=state;
+}
+/*
+function wipeChildButtons(){
   document.getElementById('button-child-WEX').style.visibility='hidden';
-
-  document.getElementById('coding').style.visibility='hidden';
   document.getElementById('button-child-coding').style.visibility='hidden';
-
-  document.getElementById('activities').style.visibility='hidden';
   document.getElementById('button-child-activities').style.visibility='hidden';
+}
+*/
+
+function findChildButtons(name){
+  if (name==='WEX'){
+    return [document.getElementById('renishaw'),
+    document.getElementById('siemens'),
+    document.getElementById('other')];
+  }
+
 }
 
 
+function changeButtonTransition(button,amount){
+  button.style.transition=`2s`;
+  button.style.transform=`translateX(${amount}px)`;
+}
 
 
+function buttonsTransitions(name,removeButtons){
+  let first,second,third;
+  [first,second,third]=findChildButtons(name);
 
-function translateButtons(name,amount,button,textShown){
-  if (textShown){
-    document.querySelector('.writing-space').innerHTML='';
-    button.style.transform=
-    `translate(0px,0px) scaleX(1) scaleY(1)`;
-
-    
-    setTimeout(()=>{
-      wipeAllButtons();
-      WEXbutton.style.visibility='visible';
-      codingbutton.style.visibility='visible';
-      activitiesbutton.style.visibility='visible';
-      button.style.transform='';
-    },1000);
-
-    setTimeout(()=>{
-    document.querySelector('.writing-space').innerHTML='';
-    },100);
-    
-    
-    return false;
+  if (removeButtons){
+    console.log('abcdef')
+    changeButtonTransition(first,-370);
+    changeButtonTransition(second,-900);
+    changeButtonTransition(third,-1400);
   }else{
-    
-    button.style.transform=
-    `translate(${amount}px,0px) scaleX(1.5) scaleY(1.5)`;
-
-    wipeAllButtons();
-    document.getElementById(`button-child-${name}`).style.visibility='visible';
-    document.getElementById(name).style.visibility='visible';
-    return true;
+    changeButtonTransition(first,0);
+    changeButtonTransition(second,0);
+    changeButtonTransition(third,0);
   }
 }
 
@@ -114,27 +111,87 @@ function translateButtons(name,amount,button,textShown){
 
 
 
-document.querySelector('.WEX').addEventListener('click',()=>{
-  textShown=translateButtons('WEX',windowInnerWidth/3,WEXbutton,textShown);
-});
 
 
-document.querySelector('.coding').addEventListener('click',()=>{
-  textShown=translateButtons('coding',0,codingbutton,textShown);
-});
+function translateButtons(name,amount,button,textShown){
+  if (textShown){
+    //hide all the child buttons
+    buttonsTransitions(name,true);
+    
+    //wipeChildButtons();
+    
+    //moving the button back to its original position
+    button.style.transform=
+    ``;
 
+    //making it so that you can hover and it will still work
 
-document.querySelector('.activities').addEventListener('click',()=>{
-  textShown=translateButtons('activities',-windowInnerWidth/3,activitiesbutton,textShown);
-});
+    //returning all parent buttons
+    wipeParentsID=setTimeout(()=>{
+      changeParentButtons('visible');
+      //remove again if someone tried to open the text again while in motiont
+      document.querySelector('.writing-space').innerHTML='';
+    },1500);
+    console.log(wipeParentsID);
 
+    //removes the text on the screen
+    document.querySelector('.writing-space').innerHTML='';
 
+    //just saying that the child buttons are now hidden (and text)
+    return false;
+  }else{
+    clearTimeout(wipeParentsID);
+    //moving the button into the middle
+    button.style.transform=
+    `translate(${amount}px,0px) scaleX(1.5) scaleY(1.5)`;
 
+    //hiding all the parents buttons
+    changeParentButtons('hidden');
 
+    //shows the button that we want to see in the middle
+    document.getElementById(name).style.visibility='visible';
+    
+    //
+    buttonsTransitions(name,false);
+    
 
-document.querySelector('.renishaw').addEventListener('click',()=>{
-  fetchData('/Texts/Renishaw.txt')
-  .then(textData=>{
-    document.querySelector('.writing-space').innerHTML=textData;
-  })
-})
+    return true;
+  }
+}
+
+function setUpButtons(button){
+  button.onmouseover = function() {
+    if (this.style.transform==='none'){
+      this.style.transform='scaleX(1.5) scaleY(1.5)';
+    }
+    
+    if (!this.style.transform.includes('scaleX(1.5) scaleY(1.5)')){
+      this.style.transform+='scaleX(1.5) scaleY(1.5)';
+    }
+  
+    this.style.backgroundColor= 'grey';
+  };
+  
+  button.onmouseout = function() {
+    if (this.style.transform==='scaleX(1.5) scaleY(1.5)'){
+      this.style.transform='';
+    }
+    this.style.backgroundColor= '';
+  };
+  
+}
+
+function setUpButtonMove(buttonName){
+  document.querySelector(`.${buttonName}`).addEventListener('click',()=>{
+    textShown=translateButtons(`${buttonName}`,windowInnerWidth/3,WEXbutton,textShown);
+  });
+}
+
+setUpButtons(document.getElementById('WEX'))
+setUpButtonMove('WEX')
+
+setUpButtons(document.getElementById('coding'))
+setUpButtonMove('coding')
+
+setUpButtons(document.getElementById('activities'))
+setUpButtonMove('activities')

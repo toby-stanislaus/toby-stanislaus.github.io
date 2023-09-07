@@ -1,3 +1,4 @@
+<div class=title>Renishaw</div>
 <h1 class="highlighted-points">Set-up</h1>
 
 At Renishaw I was given a tour of the Renishaw site and the machines made there.<br>
@@ -6,11 +7,11 @@ Promptly after, I got grouped with three other top-end coding enthusiasts to pro
 
 <h1 class="highlighted-points">The Task</h1>
 
--To make a multi-device morse code messaging system. <br>
+- To make a multi-device morse code messaging system. <br><br>
 
--This was done by using 3 computers, 1 to act as the input, another to act as the <br>Server/decoding the morse to english, and the last to act as the output. 
+- This was done by using 3 computers, 1 to act as the input, another to act as the <br>Server/decoding the morse to english, and the last to act as the output. 
 
--The user clicks on the input computer. <br>
+- The user clicks on the input computer. <br>
 Tap for a dot, hold for dash and hold for a couple seconds for a slash (to divide up <br>letters) 
 <br><br><br>
 
@@ -36,14 +37,14 @@ Tap for a dot, hold for dash and hold for a couple seconds for a slash (to divid
 
 <h1 class="highlighted-points">Learning Points</h1>
 <div class="hidden">
--In the project, I learnt how crucial it was that we worked together, and the<br> efficiency of using git to back up our work.<br><br>
+- In the project, I learnt how crucial it was that we worked together, and the<br> efficiency of using git to back up our work.<br><br>
 </div>
--In addition, we divided the work up between our members so that we may work to our<br> strengths, one person to each computer and one person on UI.<br><br>
+- In addition, we divided the work up between our members so that we may work to our<br> strengths, one person to each computer and one person on UI.<br><br>
 
 My role in the team was the Input computer (and helping the Output computer),<br> 
 which I found to be much more statisfying to me and my group members to work as.<br><br>
 
--The work experience was designed to recreate an Agile structure, as we had a daily<br> stand-up meeting to plan each day with our mentor and a presentation at the end <br>of the week.<br><br>
+- The work experience was designed to recreate an Agile structure, as we had a daily<br> stand-up meeting to plan each day with our mentor and a presentation at the end <br>of the week.<br><br>
 
 This to me was interesting as I had never done something such as this before, but I<br> found helped me coordinate my work smoothly with the rest of the group to make my<br> contributions valuable and expected
 <br><br><br>
@@ -55,4 +56,4 @@ The project was made exclusively with python, with the Input code using Tkinter 
 The DBMS computer used SQLite for its translations and python sockets to send the<br> messages. This translated message was then received by the Output computer, <br>receiving the message with sockets and displayed the message using Tkinter.<br><br>
 
 
-Throughout the week, we created a beautiful PowerPoint that we presented at the end<br> of the week to a large group of people.<br>
+Throughout the week, we created a beautiful PowerPoint that we presented at the end<br> of the week to a large group of people.<br><br>
