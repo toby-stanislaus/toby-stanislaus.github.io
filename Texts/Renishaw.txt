@@ -19,17 +19,17 @@ Tap for a dot, hold for dash and hold for a couple seconds for a slash (to divid
 
 <div class='text-with-image'>
   <div class="introText float-left">
-    At the end of our week, we made a program that could easily relay morse messages between computers, and the other requirements.<br><br>
+    At the end of our week, we made a program that could easily <br>relay morse messages between computers, and the other <br>requirements.<br><br>
 
-    However, we added in extra functionability to our project, for better user experience.<br><br>
+    However, we added in extra functionability to our project, for <br>better user experience.<br><br>
 
-    For example, we made the characters show up on the input screen you entered with your mouse clicks, so that you may see what you are sending before you send (spacebar).<br><br>
+    For example, we made the characters show up on the input <br>screen you entered with your mouse clicks, so that you may <br>see what you are sending before you send (spacebar).<br><br>
 
-    To help you input messages, you could delete the last character with the backspace to make it easier to send proper messages, and sending 6 dots would clear the output screen.<br><br>
+    To help you input messages, you could delete the last<br> character with the backspace to make it easier to send proper <br>messages, and sending 6 dots would clear the output screen.<br><br>
 
-    In addition, we provided a morse grid onto the input screen so that, if you are new to morse code, you may still input coherent messages.<br><br>
+    In addition, we provided a morse grid onto the input screen so <br>that, if you are new to morse code, you may still input coherent <br>messages.<br><br>
 
-    To top the project off, we added a cool hacker/cyberpunk theme to make the UI asthetic and, by far, the best looking as well as the best functioning and user experience project of the other groups.<br><br>
+    To top the project off, we added a cool hacker/cyberpunk <br>theme to make the UI asthetic and, by far, the best looking as <br>wellas the best functioning and user experience project of the <br>other groups.<br><br>
   </div>
   <img src='\Texts\Renishaw.jpg' class="WEXimage">
 </div>
