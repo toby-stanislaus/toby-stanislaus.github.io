@@ -4,7 +4,7 @@ const oldTitle=document.title;
 const WEXbutton=document.getElementById('WEX');
   const renishawButton=document.getElementById('renishaw')
   const siemensButton=document.getElementById('siemens');
-  const otherButton=document.getElementById('other');
+  const denseAirButton=document.getElementById('dense-air');
 
 const codingbutton=document.getElementById('coding');
   const code1=document.getElementById('code1');
@@ -25,39 +25,50 @@ let wipeAddingHoverID;
 
 //setting up buttons
 
-
-
-
-addButtonHover(WEXbutton)
-setUpButtonMove('WEX',windowInnerWidth/3)
-
-
-
-addButtonHover(renishawButton)
-renishawButton.addEventListener('click', ()=>{
-  read('/Texts/Renishaw.txt')})
+//hiding child buttons
 renishawButton.style.display='none';
-
-addButtonHover(siemensButton)
 siemensButton.style.display='none';
-
-addButtonHover(otherButton)
-otherButton.style.display='none';
-
-
-
-addButtonHover(codingbutton)
-setUpButtonMove('coding',0)
+denseAirButton.style.display='none';
 
 code1.style.display='none';
 code2.style.display='none';
 code3.style.display='none';
 
+activity1.style.display='none';
+activity2.style.display='none';
+activity3.style.display='none';
+
+
+//////
+addButtonHover(WEXbutton,'grey')
+setUpButtonMove('WEX',windowInnerWidth/3)
+
+
+
+renishawButton.addEventListener('click', ()=>{
+  read('/Texts/Renishaw.txt')
+})
+
+siemensButton.addEventListener('click', ()=>{
+  read('/Texts/Siemens.txt')
+})
+
+denseAirButton.addEventListener('click', ()=>{
+  read('/Texts/Dense-Air.txt')
+})
+
+
+//////
+addButtonHover(codingbutton,'grey')
+setUpButtonMove('coding',0)
 
 
 
 
-addButtonHover(activitiesbutton)
+
+
+///////
+addButtonHover(activitiesbutton,'grey')
 setUpButtonMove('activities',-windowInnerWidth/3)
 
 
@@ -92,6 +103,7 @@ function readFiles(filePath) {
 }
 
 function read(filePath){
+  
   readFiles(filePath)
     .then(data => {
       if (data !== null) {
@@ -103,6 +115,7 @@ function read(filePath){
       .catch(error => {
         console.error('An unexpected error occurred:', error);
       });
+  
 }
 
 
@@ -117,7 +130,7 @@ function findChildButtons(name){
   if (name==='WEX'){
     return [renishawButton,
     siemensButton,
-    otherButton];
+    denseAirButton];
   }else if (name==='coding'){
     return [code1,
     code2,
@@ -132,12 +145,12 @@ function findChildButtons(name){
 
 
 function changeButtonTransition(button,amount){
-  removeButtonHover(button);
+  removeButtonHover(button,true);
 
   button.style.transition=`transform 1s ease-in-out`;
   button.style.transform=`translateX(${amount}px)`;
   setTimeout(()=>{
-    addButtonHover(button);
+    addButtonHover(button,'white');
   },1000)
 
 }
@@ -192,13 +205,13 @@ function translateButtons(name,amount,button,textShown){
     clearTimeout(wipeAddingHoverID);
     buttonsTransitions(name,true);
     
-    removeButtonHover(button);
+    removeButtonHover(button,false);
     button.style.transform=
     ``;
 
     wipeParentsID=setTimeout(()=>{
       changeParentButtons('visible');
-      addButtonHover(button);
+      addButtonHover(button,'grey');
       document.querySelector('.writing-space').innerHTML='';
     },1000);
 
@@ -209,27 +222,24 @@ function translateButtons(name,amount,button,textShown){
     
   }else{
     clearTimeout(wipeParentsID);
-    
+    buttonsTransitions(name,false);
 
-    
-    removeButtonHover(button);
-  
+    removeButtonHover(button,false);
   
     button.style.transform=
     `translate(${amount}px,0px) scaleX(1.5) scaleY(1.5)`;
-  
+    changeParentButtons('hidden');
+
 
     wipeAddingHoverID=setTimeout(()=>{
-      addButtonHover(button);
+      addButtonHover(button,'grey');
     },1000)
-  
-
-    changeParentButtons('hidden');
+    
   
     document.getElementById(name).style.visibility='visible';
     
   
-    buttonsTransitions(name,false);
+   
     
  
     return true;
@@ -247,16 +257,16 @@ function changeBackgroundColorWhite(){
 }
 
 
-function hoverOverButton() {
-  if (this.style.transform==='none'){
-    this.style.transform='scaleX(1.5) scaleY(1.5)';
+function hoverOverButton(button,colour) {
+  if (button.style.transform==='none'){
+    button.style.transform='scaleX(1.5) scaleY(1.5)';
   }
   
-  if (!this.style.transform.includes('scaleX(1.5) scaleY(1.5)')){
-    this.style.transform+='scaleX(1.5) scaleY(1.5)';
+  if (!button.style.transform.includes('scaleX(1.5) scaleY(1.5)')){
+    button.style.transform+='scaleX(1.5) scaleY(1.5)';
   }
 
-  this.style.backgroundColor= 'grey';
+  button.style.backgroundColor= colour;
 
 }
 
@@ -271,14 +281,21 @@ function hoverOffButton() {
 }
 
 
-function addButtonHover(button){
-  button.onmouseover = hoverOverButton;
+function addButtonHover(button,colour){
+  button.onmouseover = ()=>{
+    hoverOverButton(button,colour)};
+
   button.onmouseout = hoverOffButton;
 }
 
-function removeButtonHover(button){
+function removeButtonHover(button,childButton){
+  if (!childButton){
   button.onmouseover = changeBackgroundColorGrey;
   button.onmouseout = changeBackgroundColorWhite;
+  }else{
+    button.onmouseover = changeBackgroundColorWhite;
+    button.onmouseout = changeBackgroundColorWhite;
+  }
 }
 
 

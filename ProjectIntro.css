@@ -47,7 +47,7 @@ body{
   user-select: none;
   cursor: pointer;
   border-radius: 10px;
-
+  
 }
 
 
@@ -55,19 +55,26 @@ body{
 .authorText{
   padding-bottom:30px;
   user-select:none;
+  margin-left:15px;
 }
 
-.title{
+.title,
+.WEXtitle{
   font-size:60px;
   user-select: none;
   color:rgb(250, 121, 117);
   border:none;
   padding-bottom:10px;
+  margin-left:15px;
+}
+.WEXtitle{
+  margin-left:0px;
 }
 
 .introText{
   font-size:23px;
   user-select: none;
+  white-space: pre-wrap;
 }
 
 
@@ -98,13 +105,19 @@ body{
 
 
 
-
-
+.wrapping{
+  float:left;
+}
+.writing-space{
+  margin-left:15px;
+  margin-bottom:50px;
+}
 .button-child-container,
 .parent-buttons{
   white-space: nowrap;
   user-select: none;
   position: relative;
+  
 }
 
 .button-child-WEX,
@@ -128,16 +141,15 @@ body{
 
 .WEXimage {
   float:right;
-  height:750px;
   width:60%;
   border-radius: 10px;
-  
+  height: auto;
 }
 
 .text-with-image {
   overflow: hidden;
-  height:750px;
-
+  height:auto;
+  display: inline-block;
 }
 
 .float-left {
@@ -150,3 +162,17 @@ body{
   color:rgb(241, 190, 131);
 }
 
+.logo-image-renishaw{
+  width:110px;
+  height:30px;
+}
+
+.logo-image-siemens{
+  width:90px;
+  height:20px;
+}
+
+.logo-image-dense-air{
+  width:100px;
+  height:25px;
+}

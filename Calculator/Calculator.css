@@ -1,4 +1,5 @@
 body {
+  user-select:none;
   color: white;
 }
 
@@ -20,3 +21,4 @@ body {
 .results {
   font-size:25px;
 }
+

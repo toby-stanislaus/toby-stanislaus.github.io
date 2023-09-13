@@ -1,59 +1,71 @@
-<div class=title>Renishaw</div>
+<div class=WEXtitle>Renishaw WEX</div>
 <h1 class="highlighted-points">Set-up</h1>
 
-At Renishaw I was given a tour of the Renishaw site and the machines made there.<br>
-Promptly after, I got grouped with three other top-end coding enthusiasts to proceed <br>with a designated project.
-<br><br><br>
+At Renishaw I was given a tour of the Renishaw site and the machines made there.
+Promptly after, I got grouped with three other top-end coding enthusiasts to proceed 
+with a designated project.
+
 
 <h1 class="highlighted-points">The Task</h1>
 
-- To make a multi-device morse code messaging system. <br><br>
+- To make a multi-device morse code messaging system. 
 
-- This was done by using 3 computers, 1 to act as the input, another to act as the <br>Server/decoding the morse to english, and the last to act as the output. 
+- This was done by using 3 computers, 1 to act as the input, another to act as the 
+Server/decoding the morse to english, and the last to act as the output. 
 
-- The user clicks on the input computer. <br>
-Tap for a dot, hold for dash and hold for a couple seconds for a slash (to divide up <br>letters) 
-<br><br><br>
+- The user clicks on the input computer. Tap for a dot, hold for dash and 
+hold for a couple seconds for a slash (to divide up letters) 
 
-<h1 class="highlighted-points">Our Project</h1>
+
+
 
 <div class='text-with-image'>
-  <div class="introText float-left">
-    At the end of our week, we made a program that could easily <br>relay morse messages between computers, and the other <br>requirements.<br><br>
+<h1 class="highlighted-points">Our Project</h1>
+  <div class='float-left'>
+At the end of our week, we made a program that could easily relay morse messages between computers, and the other requirements.
 
-    However, we added in extra functionability to our project, for <br>better user experience.<br><br>
+However, we added in extra functionability to our project, for better user experience.
 
-    For example, we made the characters show up on the input <br>screen you entered with your mouse clicks, so that you may <br>see what you are sending before you send (spacebar).<br><br>
+For example, we made the characters show up on the input screen you entered with your mouse clicks, so that you may see what you are sending before you send (spacebar).
 
-    To help you input messages, you could delete the last<br> character with the backspace to make it easier to send proper <br>messages, and sending 6 dots would clear the output screen.<br><br>
+To help you input messages, you could delete the last character with the backspace to make it easier to send proper messages, and sending 6 dots would clear the output screen.
 
-    In addition, we provided a morse grid onto the input screen so <br>that, if you are new to morse code, you may still input coherent <br>messages.<br><br>
+In addition, we provided a morse grid onto the input screen so that, if you are new to morse code, you may still input coherent messages.
 
-    To top the project off, we added a cool hacker/cyberpunk <br>theme to make the UI asthetic and, by far, the best looking as <br>wellas the best functioning and user experience project of the <br>other groups.<br><br>
+To top the project off, we added a cool hacker/cyberpunk theme to make the UI asthetic and, by far, the best looking as wellas the best functioning and user experience project of the other groups.
   </div>
-  <img src='\Texts\Renishaw.jpg' class="WEXimage">
+  <img src='\images\other\renishaw-image.jpg' class="WEXimage">
 </div>
-<br><br><br>
+
 
 <h1 class="highlighted-points">Learning Points</h1>
 <div class="hidden">
-- In the project, I learnt how crucial it was that we worked together, and the<br> efficiency of using git to back up our work.<br><br>
+- In the project, I learnt how crucial it was that we worked together, 
+and the efficiency of using git to back up our work.
 </div>
-- In addition, we divided the work up between our members so that we may work to our<br> strengths, one person to each computer and one person on UI.<br><br>
+- In addition, we divided the work up between our members so that we may work to our 
+strengths, one person to each computer and one person on UI.
 
-My role in the team was the Input computer (and helping the Output computer),<br> 
-which I found to be much more statisfying to me and my group members to work as.<br><br>
+My role in the team was the Input computer (and helping the Output computer), 
+which I found to be much more statisfying to me and my group members to work as.
 
-- The work experience was designed to recreate an Agile structure, as we had a daily<br> stand-up meeting to plan each day with our mentor and a presentation at the end <br>of the week.<br><br>
+- The work experience was designed to recreate an Agile structure, as we had a daily 
+stand-up meeting to plan each day with our mentor and a presentation at the end of the week.
 
-This to me was interesting as I had never done something such as this before, but I<br> found helped me coordinate my work smoothly with the rest of the group to make my<br> contributions valuable and expected
-<br><br><br>
+This to me was interesting as I had never done something such as this before, but I 
+found helped me coordinate my work smoothly with the rest of the group to make my 
+contributions valuable and expected
+
 
 <h1 class="highlighted-points">Resources Used</h1>
 
-The project was made exclusively with python, with the Input code using Tkinter as<br> the GUI and python sockets to send the data over to the server and database<br> computer.<br><br> 
+The project was made exclusively with python, with the Input code using Tkinter as 
+the GUI and python sockets to send the data over to the server and database computer. 
 
-The DBMS computer used SQLite for its translations and python sockets to send the<br> messages. This translated message was then received by the Output computer, <br>receiving the message with sockets and displayed the message using Tkinter.<br><br>
+The DBMS computer used SQLite for its translations and python sockets to send the 
+messages. This translated message was then received by the Output computer, receiving 
+the message with sockets and displayed the message using Tkinter.
 
 
-Throughout the week, we created a beautiful PowerPoint that we presented at the end<br> of the week to a large group of people.<br><br>
+Throughout the week, we created a beautiful PowerPoint that we presented at the end 
+of the week to a large group of people.
