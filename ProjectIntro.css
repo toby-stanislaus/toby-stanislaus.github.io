@@ -121,10 +121,13 @@ body{
   
 }
 
+.button-child-container{
+  height: 300px;
+}
+
 .button-child-WEX,
 .button-child-coding,
 .button-child-activities{
-
   user-select: none;
 }
 

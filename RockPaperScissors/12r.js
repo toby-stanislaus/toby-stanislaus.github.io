@@ -146,12 +146,12 @@ document.querySelector('.js-rock-button')
 
 document.querySelector('.js-paper-button')
 .addEventListener('click', () => {
-  playGame('rock');
+  playGame('paper');
 });
 
 document.querySelector('.js-scissors-button')
 .addEventListener('click', () => {
-  playGame('rock');
+  playGame('scissors');
 });
 
 document.body.addEventListener('keydown', (event) => {
