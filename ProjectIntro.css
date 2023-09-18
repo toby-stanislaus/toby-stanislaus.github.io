@@ -94,6 +94,7 @@ body{
 }
 
 .button-child {
+  background-color: white;
   height:150px;
   width:150px;
   border-radius: 100px;
@@ -141,7 +142,7 @@ body{
 
 .WEXimage {
   float:right;
-  width:60%;
+  width:30%;
   border-radius: 10px;
   height: auto;
 }
