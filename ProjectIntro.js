@@ -23,7 +23,7 @@ function makeButtons(buttonName,amount){
     const childButton=document.getElementById(childName);
     childButton.style.display='none';
     childButton.addEventListener('click', ()=>{
-      readFile(`/Texts/${childName}.txt`)
+      readFile(`/Texts/${buttonName}/${childName}.txt`)
     });
     children.push(childButton);
   });
@@ -33,6 +33,7 @@ function makeButtons(buttonName,amount){
 
 
 function readFile(filePath){
+  console.log(filePath)
   fetch(filePath)
     .then(response => {
       if (!response.ok) {

@@ -21,7 +21,7 @@ hold for a couple seconds for a slash (to divide up letters)
 
 <div class='text-with-image'>
 <h1 class="highlighted-points">Our Project</h1>
-  <div class='float-left'>
+  <div class='text-float-left'>
 At the end of our week, we made a program that could easily relay morse messages between computers, and the other requirements.
 
 However, we added in extra functionability to our project, for better user experience.

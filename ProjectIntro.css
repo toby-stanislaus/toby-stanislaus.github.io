@@ -97,9 +97,7 @@ body{
   background-color: white;
   height:150px;
   width:150px;
-  border-radius: 100px;
   border:none;
-  user-select: none;
   margin-top: 50px;
   margin-left:199px;
 }
@@ -125,11 +123,6 @@ body{
   height: 300px;
 }
 
-.button-child-WEX,
-.button-child-coding,
-.button-child-activities{
-  user-select: none;
-}
 
 
 .first-button{
@@ -156,7 +149,7 @@ body{
   display: inline-block;
 }
 
-.float-left {
+.text-float-left {
   width:40%;
   float:left;
 }
