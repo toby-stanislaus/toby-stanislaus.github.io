@@ -1,10 +1,8 @@
 <div class=WEXtitle>Sports</div>
-
-
+<h1 class="highlighted-points">Sailing</h1>
 
 <div class='text-with-image'>
 <div class='text-float-left'>
-<h1 class="highlighted-points">Sailing</h1>
 From the years 13+ I have been race sailing with a partner to go as quickly as possible for the wind. When Racing, I had to have much control and composure as there are generally sailors in close proximity to yourself, and it is your responsibility to not collide with other sailors, and generally this entails much shouting from both parties! 
 
 Additionally, I had to regularly commute most weekends to the coast, a 2 hour car ride.

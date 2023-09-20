@@ -1,0 +1,5 @@
+<div class='WEXtitle'>Grades</div>
+
+<div class='grade-bunch'>GCSE</div>
+<h1 class="grade">Further Maths - 9</h1>
+<h1 class="grade">Statistics - 8</h1>
