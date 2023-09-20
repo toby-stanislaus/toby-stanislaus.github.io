@@ -1,0 +1,121 @@
+
+
+
+
+.WEX{
+  left:150px;
+}
+
+.coding{
+  left:44%;
+}
+
+.activities{
+  right:150px;
+}
+
+.WEX,
+.coding,
+.activities,
+.button-child {
+  position: absolute;
+  width:200px;
+  height:200px;
+  border:none;
+  border-radius:100px;
+  user-select: none;
+  transition: transform 1s ease-in-out;
+  margin:50px 0px 50px 0px;
+  cursor:pointer;
+}
+
+.parent-buttons{
+  position: relative;
+  height:200px;
+  margin-bottom:100px;
+}
+
+
+.writing-space{
+  margin-left:15px;
+  margin-bottom:50px;
+}
+
+.button-child-container,
+.parent-buttons{
+  width:1789px;
+  white-space: nowrap;
+  user-select: none;
+  position: relative;
+  
+}
+
+.button-child-container{
+  position: relative;
+  height: 300px;
+
+}
+
+.button-child {
+  position: absolute;
+  left:0px;
+  background-color: white;
+  height:150px;
+  width:150px;
+  border:none;
+  margin-top: 50px;
+  margin-left:199px;
+}
+
+
+
+
+
+
+.ExperienceImage {
+  float:right;
+  width:30%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.text-with-image {
+  margin-top:0px;
+  width:100%;
+  overflow: hidden;
+  height:auto;
+  display: inline-block;
+}
+
+.text-float-left {
+  width:40%;
+  float:left;
+}
+
+.highlighted-points{
+  font-size:40px;
+  color:rgb(241, 190, 131);
+}
+
+
+
+
+.logo-image-renishaw{
+  width:110px;
+  height:30px;
+}
+
+.logo-image-siemens{
+  width:90px;
+  height:20px;
+}
+
+.logo-image-dense-air{
+  width:100px;
+  height:25px;
+}
+
+.logo-image-python{
+  width:75px;
+  height:75px;
+}

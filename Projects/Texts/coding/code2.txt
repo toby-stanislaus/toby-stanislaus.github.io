@@ -1,0 +1,19 @@
+<div class=WEXtitle>Javascript</div>
+<h1 class="highlighted-points">The Website</h1>
+This Website that you seeing right now has been created with alot of javascript, 
+allowing the buttons to run smoothly and function properly, for me, javascript is a 
+new language, so I had to restart the process of understanding programming languages 
+again. However, I did find it much easier to grasp having already learnt Python.
+
+
+<div class='text-with-image'>
+<div class='text-float-left'>
+<h1 class="highlighted-points">Learning</h1>
+Learning Javascript, for me, was watching a 12 hour tutorial that took me through the basics and built the projects that you see at the top, calculator, rock paper scissors and a todo list. All of the projects required a knowledge of linking HTML Javascript and CSS together to make a user-friendly functional apps to be proud of.
+
+It required a knowledge of advanced functions, local storage, adding and removing HTML, adding and removing elements, manipulating HTML, CSS and specific elements within Javascript and adding transitions with transformations (alot of them!)
+</div>
+</div>
+
+<h1 class="highlighted-points">Go and explore my website,
+and test my Javascript skills for yourself!</h1>

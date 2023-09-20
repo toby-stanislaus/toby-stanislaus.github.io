@@ -19,6 +19,11 @@ body {
 }
 
 .results {
+  margin-left:15px;
+  height: 25px;
   font-size:25px;
 }
 
+.moveLeft {
+  margin-left:15px;
+}

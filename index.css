@@ -1,0 +1,80 @@
+body{
+  background-color:rgb(60, 62, 65);
+  margin:0;
+  font-family:sans-serif;
+  color:white;
+}
+
+
+.project-button {
+  background-color: transparent;
+  color:white;
+  border:none;
+  font-size:100%;
+  border-radius: 15px;
+  cursor: pointer;
+  height:60px;
+  padding:5px 10px 5px 15px;
+  float: right;
+  margin-right:2px;
+  user-select:none;
+  white-space: nowrap;
+  width:17%;
+}
+
+
+.project-button:hover,
+.titleText:hover{
+  background-color: grey;
+}
+
+.headLine-buttons {
+  background-color: rgb(34, 36, 36);
+  height:62px;
+  width:100% -1px;
+  padding:2px;
+  overflow: hidden;
+}
+
+.titleText{
+  white-space: nowrap;
+  font-size:50px;
+  color:white;
+  float:left;
+  user-select:none;
+  border: none;
+  background-color: transparent;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 10px;
+  
+}
+
+
+.authorText{
+  padding-bottom:30px;
+  user-select:none;
+  margin-left:15px;
+}
+
+.title,
+.WEXtitle{
+  font-size:60px;
+  user-select: none;
+  color:rgb(250, 121, 117);
+  border:none;
+  padding-bottom:10px;
+  margin-left:15px;
+}
+
+.WEXtitle{
+  margin-left:0px;
+}
+
+.introText{
+  font-size:23px;
+  user-select: none;
+  white-space: pre-wrap;
+}
+
+

@@ -34,7 +34,7 @@ In addition, we provided a morse grid onto the input screen so that, if you are 
 
 To top the project off, we added a cool hacker/cyberpunk theme to make the UI asthetic and, by far, the best looking as wellas the best functioning and user experience project of the other groups.
   </div>
-  <img src='\images\other\renishaw-image.jpg' class="WEXimage">
+  <img src='/Projects\images\other\renishaw-image.jpg' class="ExperienceImage">
 </div>
 
 

@@ -1,29 +1,18 @@
-function changeTitle(){
-  i=0;
-  intervalID=setInterval(() => {
-    if (i<3){
-      document.title=oldTitle;
-      i+=1;
-    }else{
-      document.title=`${oldTitle} - By Toby Stanislaus`;
-      i=0;
-    }
-  },2000);
-}
-
-
-function makeButtons(buttonName,amount){
-  const parentButton=WEXbutton=document.getElementById(buttonName)
-  addButtonHover(parentButton,'grey')
-  setUpButtonMove(buttonName,amount)
+function makeButtons(buttonName){
+  const parentButton=WEXbutton=document.getElementById(buttonName);
+  addButtonHover(parentButton,'grey');
+  middleButtonX=document.getElementById('coding').getBoundingClientRect().left;
+  
+  setUpParentButton(buttonName,middleButtonX-parentButton.getBoundingClientRect().left);
 
   // child buttons
   let children=[parentButton];
   buttonIDs[buttonName].forEach(childName => {
     const childButton=document.getElementById(childName);
     childButton.style.display='none';
+    childButton.style.transform=`translateX(-349px)`;
     childButton.addEventListener('click', ()=>{
-      readFile(`/Texts/${buttonName}/${childName}.txt`)
+      readFile(`/Projects/Texts/${buttonName}/${childName}.txt`);
     });
     children.push(childButton);
   });
@@ -33,7 +22,6 @@ function makeButtons(buttonName,amount){
 
 
 function readFile(filePath){
-  console.log(filePath)
   fetch(filePath)
     .then(response => {
       if (!response.ok) {
@@ -57,8 +45,10 @@ function readFile(filePath){
   
 }
 
+//color==rgb(255, 194, 169)
+
 //setting up all buttons
-function setUpButtonMove(buttonName,amount){
+function setUpParentButton(buttonName,amount){
   document.querySelector(`.${buttonName}`).addEventListener('click',()=>{
     textShown=translateButtons(buttonName,amount,
     document.getElementById(buttonName),textShown);
@@ -69,11 +59,10 @@ function setUpButtonMove(buttonName,amount){
 function translateButtons(name,amount,button,textShown){
   if (textShown){
     clearTimeout(wipeAddingHoverID);
-    buttonsTransitions(name,true);
+    childButtonsTransitions(name,true);
     removeButtonHover(button,false);
 
-    button.style.transform=
-    ``;
+    button.style.transform=``;
 
     wipeParentsID=setTimeout(()=>{
       changeParentButtons('visible');
@@ -81,18 +70,16 @@ function translateButtons(name,amount,button,textShown){
       document.querySelector('.writing-space').innerHTML='';
     },1000);
 
-
-
     document.querySelector('.writing-space').innerHTML='';
     return false;
     
   }else{
     clearTimeout(wipeParentsID);
-    buttonsTransitions(name,false);
+
+    childButtonsTransitions(name,false);
     removeButtonHover(button,false);
-  
     button.style.transform=
-    `translate(${amount}px,0px) scaleX(1.5) scaleY(1.5)`;
+    `translateX(${amount}px) scaleX(1.5) scaleY(1.5)`;
 
     changeParentButtons('hidden');
 
@@ -127,6 +114,17 @@ function changeButtonTransition(button,amount){
 }
 
 
+function childButtonsTransitions(name,hideChildButtons){
+  const childButtons=[document.getElementById(buttonIDs[name][0]),
+                      document.getElementById(buttonIDs[name][1]),
+                      document.getElementById(buttonIDs[name][2])]
+  clearTimeout(buttonVisibleID);
+  buttonVisibleID=hideShowButtons(childButtons,buttonVisibleID,hideChildButtons);
+
+  moveChildButtons(childButtons,hideChildButtons);
+}
+
+
 function hideShowButtons(childButtons,buttonVisibleID,hide){
   if (hide){
     buttonVisibleID=setTimeout(()=>{
@@ -143,34 +141,18 @@ function hideShowButtons(childButtons,buttonVisibleID,hide){
 }
 
 
-function buttonsTransitions(name,hideChildButtons){
-  const childButtons=[document.getElementById(buttonIDs[name][0]),
-                      document.getElementById(buttonIDs[name][1]),
-                      document.getElementById(buttonIDs[name][2])]
-  clearTimeout(buttonVisibleID);
-  buttonVisibleID=hideShowButtons(childButtons,buttonVisibleID,hideChildButtons);
-
-  moveChildButtons(childButtons,hideChildButtons);
-}
-
 function moveChildButtons(childButtons,hideChildButtons){
   if (hideChildButtons){
+    
     childButtons.forEach(childButton=> {
-      let childButtonX=childButton.getBoundingClientRect().right;
-      changeButtonTransition(childButton,-childButtonX);
+      changeButtonTransition(childButton,-349);
     });
 
   }else{
     setTimeout(()=>{
-      console.log(childButtons[1].getBoundingClientRect().left)
-      let childButtonMiddleX=
-      childButtons[1].getBoundingClientRect().left +
-      (childButtons[1].getBoundingClientRect().width/2);
-
-      console.log(middleButtonX-childButtonMiddleX)
-      changeButtonTransition(childButtons[0],0)
-      changeButtonTransition(childButtons[1],0)
-      changeButtonTransition(childButtons[2],0)
+      changeButtonTransition(childButtons[0],middleButtonX-570)
+      changeButtonTransition(childButtons[1],middleButtonX-170)
+      changeButtonTransition(childButtons[2],middleButtonX+230)
     },1);
   }
 }
@@ -187,6 +169,7 @@ function changeBackgroundColorWhite(){
 
 
 function hoverOverButton(button,colour) {
+  
   if (button.style.transform==='none'){
     button.style.transform='scaleX(1.5) scaleY(1.5)';
   }
@@ -212,6 +195,7 @@ function hoverOffButton() {
 
 function addButtonHover(button,colour){
   button.onmouseover = ()=>{
+    
     hoverOverButton(button,colour)};
 
   button.onmouseout = hoverOffButton;
@@ -238,6 +222,7 @@ let buttonIDs={'WEX':['wex1','wex2','wex3'],
 
 let windowInnerWidth=window.innerWidth;
 let windowInnerHeight=window.innerHeight;
+
 let textShown=false;
 
 //IDs
@@ -245,11 +230,15 @@ let wipeParentsID;
 let buttonVisibleID;
 let wipeAddingHoverID;
 
-[wexButton,wex1,wex2,wex3]=makeButtons('WEX',windowInnerWidth/3);
-[codingButton,code1,code2,code3]=makeButtons('coding',0);
-[activitiesButton,activity1,activity2,activity3]=makeButtons('activities',-windowInnerWidth/3);
-changeTitle();
-const middleButtonX =
-codingButton.getBoundingClientRect().left+
-(codingButton.getBoundingClientRect().width/2);
-console.log(middleButtonX)
+let middleButtonX;
+
+[codingButton,code1,code2,code3]=makeButtons('coding');
+[wexButton,wex1,wex2,wex3]=makeButtons('WEX');
+[activitiesButton,activity1,activity2,activity3]=makeButtons('activities');
+
+
+
+/*
+wex1.style.display='initial';
+console.log(wex1.getBoundingClientRect().left);
+*/

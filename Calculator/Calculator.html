@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/ProjectIntro.css">
+    <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="Calculator.css">
     <link rel="shortcut icon" type="image/png" href="calculator-favicon.png">
     <title>Calculator</title>
- 
+    <script defer src="/title.js"></script>
   </head>
   <body>
 
     <div class="headLine-buttons">
       <a href="\index.html">
         <button class="titleText" >
-          Projects
+          Home
         </button>
       </a>
-      <a href="\SailingML\Intro Page.html" class="project-link">
+  
+      <a href="\SailingML\SailingML.html" class="project-link">
         <button class="project-button">
           Sailing-ML Website
         </button>
       </a>
       
-      <a href="\TodoList\Todo List.html" class="project-link">
+      <a href="\TodoList\TodoList.html" class="project-link">
         <button class="project-button">
           TodoList
         </button>
       </a>
   
-      <a href="\RockPaperScissors\12r.html" class="project-link">
+      <a href="\RockPaperScissors\RockPaperScissors.html" class="project-link">
         <button class="project-button">
           Rock Paper Scissors
         </button>
       </a>
-
-      <a href="/Calculator/calculatorFinal.html" class="project-link">
+  
+      <a href="/Calculator/Calculator.html" class="project-link">
         <button class="project-button">
           Calculator
         </button>
       </a>
+  
+      <a href="\Projects\Projects.html" class="project-link">
+        <button class="project-button">
+          Experience
+        </button>
+      </a>
+      
     </div>
   
     <div class="authorText">
@@ -47,7 +55,7 @@
     <div class="title">Calculator</div>
     <!-- Code changes are at the bottom. -->
     <p class="results"></p>
-    <p>
+    <p class="moveLeft">
       <button onclick="
         updateCalculation('1');
       " class="calculator-button">1</button>
@@ -65,7 +73,7 @@
       " class="calculator-button sign">+</button>
     </p>
 
-    <p>
+    <p class="moveLeft">
       <button onclick="
         updateCalculation('4');
       " class="calculator-button">4</button>
@@ -83,7 +91,7 @@
       " class="calculator-button sign">-</button>
     </p>
 
-    <p>
+    <p class="moveLeft">
       <button onclick="
         updateCalculation('7');
       " class="calculator-button">7</button>
@@ -101,7 +109,7 @@
       " class="calculator-button sign">*</button>
     </p>
 
-    <p>
+    <p class="moveLeft">
       <button onclick="
         updateCalculation('0');
       " class="calculator-button">0</button>
@@ -124,7 +132,7 @@
       " class="calculator-button sign">/</button>
     </p>
 
-    <p>
+    <p class="moveLeft">
       <button onclick="
         calculation = '';
        

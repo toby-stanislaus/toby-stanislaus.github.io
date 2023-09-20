@@ -1,0 +1,54 @@
+<div class=WEXtitle>Python</div>
+<h1 class="highlighted-points">Starting Out</h1>
+
+
+I started my love for Python in September 2022, where I wanted 
+to create whatever I wanted. I loved the feeling of creation, and 
+making things that we're mine, so I started with watching many 
+youtube tutorials learning the basics of Python.
+
+<div class='text-with-image'>
+<div class='text-float-left'>
+<h1 class="highlighted-points">Tkinter and Other</h1>
+
+I briefly learnt Tkinter, where I made my first project that I was proud of, a calculator. My goal for learning Python was to recreate the Monty hall problem and also to create a program that could sign boats on (more on that in the Sailing-ML tab at the top). 
+
+To solve the Monty Hall problem, I had to understand what it was. It goes like this: a gameshow host (Monty hall) offers you three doors, two with goats and one with a supercar of your choice. To make things more interesting, you can choose a door and Monty hall will then reveal one of the other doors.
+
+Your choice comes down to this: Do you switch the the other door or do you stay?
+(Hint: Your choice should always be to switch doors)
+
+So, I made the horribly written code you can see to the right, which, to make demonstrate a problem, contained over 500 lines of code, much of them very similar to the block of code that you see. However, it did the job and at the end of it, I was very proud (and relieved that this mess that I made actually worked), and it would even show a graph of the probabilty of winning with the strategie of switching, as you can see below.
+</div>
+<img src='/Projects\images\other\code1\BadCoding.png' class="ExperienceImage">
+</div>
+
+<div class='text-with-image'>
+<div class='text-float-left'>
+<h1 class="highlighted-points">Coding Quest</h1>
+There is a challenge across schools called 'Coding Quest' that is comprised of challenges that are meant for A level students, starting at the intermediate level on the first challenges ranging up to incredibly difficult challenges, with included much array manipulation, simulating the snake game, index trees and Dijykstra's algorithm. 
+
+This coding quest was only completed by two people within my school: one  year 13 going to take a CS degree at the University Level and the other being me, who would of solved every question quicker than the year 13 had I been able to be at home to complete them when they were released.
+
+At the end of the challenge, I gained 2nd place of my whole school and sixth form, whilst only being in year 10.
+</div>
+<img src='/Projects\images\other\code1\Graph.png' class="ExperienceImage">
+</div>
+
+
+<div class='text-with-image'>
+<div class='text-float-left'>
+<h1 class="highlighted-points">LeetCode</h1>
+I have spent some time coding Python by now, and so I have found a way to progress my coding learning and experience further, to more intermediate levels. For this I used the very popular choice of leetcode: you can see my stats as of year 10 on the right.
+</div>
+<img src='/Projects\images\other\code1\leetcode.png' class="ExperienceImage">
+</div>
+
+<div class='text-with-image'>
+<div class='text-float-left'>
+<h1 class="highlighted-points">Other</h1>
+Of course, I have been doing Python for school GCSE for some time with ease, additionally, I hope to be partaking in some coding challenges for the school, of which I hope to do exceptionally in.
+
+Of course, you can see what I have also been doing with Machine Learning with Python at the top of the page, as what I have been doing in Python for the majority of the time is too much for just one page.
+</div>
+</div>
