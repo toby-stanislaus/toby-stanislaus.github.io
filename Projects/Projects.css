@@ -43,7 +43,7 @@
 
 .button-child-container,
 .parent-buttons{
-  width:1789px;
+  width:100%;
   white-space: nowrap;
   user-select: none;
   position: relative;
