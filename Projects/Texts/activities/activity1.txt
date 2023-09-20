@@ -1,0 +1,31 @@
+<div class=WEXtitle>Sports</div>
+
+
+
+<div class='text-with-image'>
+<div class='text-float-left'>
+<h1 class="highlighted-points">Sailing</h1>
+From the years 13+ I have been race sailing with a partner to go as quickly as possible for the wind. When Racing, I had to have much control and composure as there are generally sailors in close proximity to yourself, and it is your responsibility to not collide with other sailors, and generally this entails much shouting from both parties! 
+
+Additionally, I had to regularly commute most weekends to the coast, a 2 hour car ride.
+
+Sailing proved to be a wonderful way to socialize with other people my age and a great way to keep fit and healthy, and to keep your mental strength strong, as you can see from the photo, I had to hang out of the boat whilst controlling it with a stick (I am the person in the front boat behind my sailing partner).
+</div>
+<img src='/Projects\images\other\activities1\Sailing.png' class="ExperienceImageBigger">
+</div>
+
+
+
+<div class='text-with-image'>
+<div class='text-float-left'>
+<h1 class="highlighted-points">Rugby</h1>
+At school, I participated in the Rugby team, as a winger (the small, quick ones). This required much teamwork and grit, and we ended up on top, winning the national schools Rugby league. This meant that I needed to attend weekly practices with the team for an hour and a half, of which I would undergo alot of running, where I had to push through, for the team.
+</div>
+</div>
+
+<div class='text-with-image'>
+<div class='text-float-left'>
+<h1 class="highlighted-points">Football</h1>
+
+</div>
+</div>

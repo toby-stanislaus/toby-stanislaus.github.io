@@ -72,13 +72,16 @@
 
 
 
-.ExperienceImage {
+.ExperienceImage,
+.ExperienceImageBigger {
   float:right;
   width:30%;
   border-radius: 10px;
   height: auto;
 }
-
+.ExperienceImageBigger {
+  width:50%;
+}
 .text-with-image {
   margin-top:0px;
   width:100%;
