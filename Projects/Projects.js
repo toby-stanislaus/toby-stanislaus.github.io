@@ -1,9 +1,10 @@
 function makeButtons(buttonName){
   const parentButton=WEXbutton=document.getElementById(buttonName);
   addButtonHover(parentButton,'grey');
-  middleButtonX=document.getElementById('coding').getBoundingClientRect().left;
-  
-  setUpParentButton(buttonName,middleButtonX-parentButton.getBoundingClientRect().left);
+  middleButtonLeft=document.getElementById('coding').getBoundingClientRect().left;
+  middleButtonWidth=document.getElementById('coding').getBoundingClientRect().width;
+  setUpParentButton(buttonName,
+    middleButtonLeft-parentButton.getBoundingClientRect().left);
 
   // child buttons
   let children=[parentButton];
@@ -107,10 +108,6 @@ function changeButtonTransition(button,amount){
   removeButtonHover(button,true);
   button.style.transition=`transform 1s ease-in-out`;
   button.style.transform=`translate(${amount}px,0px)`;
-  setTimeout(()=>{
-    addButtonHover(button,'white');
-  },1000)
-
 }
 
 
@@ -124,7 +121,7 @@ function childButtonsTransitions(name,hideChildButtons){
   moveChildButtons(childButtons,hideChildButtons);
 }
 
-
+//
 function hideShowButtons(childButtons,buttonVisibleID,hide){
   if (hide){
     buttonVisibleID=setTimeout(()=>{
@@ -143,33 +140,41 @@ function hideShowButtons(childButtons,buttonVisibleID,hide){
 
 function moveChildButtons(childButtons,hideChildButtons){
   if (hideChildButtons){
-    
+
+    for (let i = childIDs.length - 1; i >= 0; i--) {
+      clearTimeout(childIDs[i]);
+      childIDs.splice(i, 1); 
+    }
+
     childButtons.forEach(childButton=> {
       changeButtonTransition(childButton,-349);
     });
 
   }else{
+    
+    let middle=middleButtonLeft-(middleButtonLeft*0.7)+(middleButtonWidth/2);
+    
     setTimeout(()=>{
-      changeButtonTransition(childButtons[0],middleButtonX-570)
-      changeButtonTransition(childButtons[1],middleButtonX-170)
-      changeButtonTransition(childButtons[2],middleButtonX+230)
+      childButtons.forEach(childButton => {
+        let childMiddle=childButton.getBoundingClientRect().left+
+        (childButton.getBoundingClientRect().width/2);
+
+        changeButtonTransition(childButton,middle-349-childMiddle)
+        
+        childID=setTimeout(()=>{
+          addButtonHover(childButton,'white');
+        },1000)
+
+        childIDs.push(childID);
+        middle+=middleButtonLeft*0.7;
+      })
     },1);
+    
   }
 }
 
 
-function changeBackgroundColorGrey(){
-  this.style.backgroundColor='grey';
-}
-
-
-function changeBackgroundColorWhite(){
-  this.style.backgroundColor='white';
-}
-
-
-function hoverOverButton(button,colour) {
-  
+function hoverOverButton(button,colour) { 
   if (button.style.transform==='none'){
     button.style.transform='scaleX(1.5) scaleY(1.5)';
   }
@@ -179,7 +184,6 @@ function hoverOverButton(button,colour) {
   }
 
   button.style.backgroundColor= colour;
-
 }
 
 
@@ -194,30 +198,33 @@ function hoverOffButton() {
 
 
 function addButtonHover(button,colour){
-  button.onmouseover = ()=>{
-    
-    hoverOverButton(button,colour)};
-
+  button.onmouseover = () =>hoverOverButton(button,colour);
   button.onmouseout = hoverOffButton;
 }
 
+
 function removeButtonHover(button,childButton){
-  if (!childButton){
-  button.onmouseover = changeBackgroundColorGrey;
-  button.onmouseout = changeBackgroundColorWhite;
+  if (childButton){
+    button.onmouseover = () => button.style.backgroundColor='white';
+    button.onmouseout = () => button.style.backgroundColor='white';
+    
   }else{
-    button.onmouseover = changeBackgroundColorWhite;
-    button.onmouseout = changeBackgroundColorWhite;
+    button.onmouseover =  () => button.style.backgroundColor='grey';
+    button.onmouseout = () => button.style.backgroundColor='white';
   }
 }
 
+
+function refreshButtons(middleButtonLeft){
+
+}
 
 
 const text1='Input.txt';
 const oldTitle=document.title;
 let buttonIDs={'WEX':['wex1','wex2','wex3'],
-             'coding':['code1','code2','code3'],
-             'activities':['activity1','activity2','activity3']};
+               'coding':['code1','code2','code3'],
+               'activities':['activity1','activity2','activity3']};
 
 
 let windowInnerWidth=window.innerWidth;
@@ -230,7 +237,11 @@ let wipeParentsID;
 let buttonVisibleID;
 let wipeAddingHoverID;
 
-let middleButtonX;
+let childID;
+let childIDs=[];
+
+let middleButtonLeft;
+let middleButtonWidth;
 
 [codingButton,code1,code2,code3]=makeButtons('coding');
 [wexButton,wex1,wex2,wex3]=makeButtons('WEX');

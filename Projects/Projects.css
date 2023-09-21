@@ -37,6 +37,7 @@
 
 
 .writing-space{
+  height:700px;
   margin-left:15px;
   margin-bottom:50px;
 }
@@ -51,9 +52,7 @@
 }
 
 .button-child-container{
-  position: relative;
   height: 300px;
-
 }
 
 .button-child {
@@ -79,9 +78,11 @@
   border-radius: 10px;
   height: auto;
 }
+
 .ExperienceImageBigger {
   width:50%;
 }
+
 .text-with-image {
   margin-top:0px;
   width:100%;
