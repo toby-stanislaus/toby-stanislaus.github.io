@@ -1,17 +1,26 @@
+.first-button{
+  left:calc(25% - 75px);
+}
+.second-button{
+  left:calc(50% - 75px);
+}
 
+.third-button{
+  left:calc(75% - 75px);
+}
 
 
 
 .WEX{
-  left:150px;
+  left:calc(15% - 100px);
 }
 
 .coding{
-  left:44%;
+  left:calc(50% - 100px);
 }
 
 .activities{
-  right:150px;
+  left:calc(85% - 100px);
 }
 
 .WEX,
@@ -25,21 +34,21 @@
   border-radius:100px;
   user-select: none;
   transition: transform 1s ease-in-out;
-  margin:50px 0px 50px 0px;
   cursor:pointer;
 }
 
 .parent-buttons{
   position: relative;
   height:200px;
+  margin-top:30px;
   margin-bottom:100px;
 }
 
 
 .writing-space{
-  height:700px;
+  height:500px;
   margin-left:15px;
-  margin-bottom:50px;
+  margin-bottom:30px;
 }
 
 .button-child-container,
@@ -57,13 +66,11 @@
 
 .button-child {
   position: absolute;
-  left:0px;
   background-color: white;
   height:150px;
   width:150px;
   border:none;
-  margin-top: 50px;
-  margin-left:199px;
+
 }
 
 

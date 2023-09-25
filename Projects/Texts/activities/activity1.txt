@@ -13,23 +13,28 @@ Sailing proved to be a wonderful way to socialize with other people my age and a
 </div>
 
 
-
-<div class='text-with-image'>
-<div class='text-float-left'>
 <h1 class="highlighted-points">Rugby</h1>
-At school, I participated in the Rugby team, as a winger (the small, quick ones). This required much teamwork and grit, and we ended up on top, winning the national schools Rugby league. This meant that I needed to attend weekly practices with the team for an hour and a half, of which I would undergo alot of running, where I had to push through, for the team.
-</div>
-</div>
-
 <div class='text-with-image'>
 <div class='text-float-left'>
+
+At school, I participated in the Rugby team, as a winger (the small, quick ones). This required much teamwork and grit, and we ended up on top, winning the national schools Rugby league. This meant that I needed to attend weekly practices with the team for an hour and a half, of which I would undergo alot of running, where I had to push through, for the team.
+
+This Picture you see to the right, this was after a Year 7 tournament of which we came second of 9 schools, only narrowly losing the final game (I'm the one on the bottom right, kneeling on the ground).
+</div>
+<img src='/Projects\images\other\activities1\Rugby.jpg' class="ExperienceImageBigger">
+</div>
+
+
+
 <h1 class="highlighted-points">Football</h1>
+<div class='text-with-image'>
+<div class='text-float-left'>
 From the ages 6 - 13, I played in the football teams Chippenham Barca FC and Chippenham Milan FC. Playing football, I learnt how essential and crucial teamwork is to achieve your goals, and of how much easier achieving and scoring goals with the help of your team is.
 
 I believe this has made me a teamwork-oriented player, becoming relaxed with trusting others, knowing that they would do the same for me. This mentality has carried over to my subjects, and I must say that I owe my academic success to my collaboration with fellow students and teachers to achieve our own goals.
 
 Similarly to Rugby, I played Football in school, as a defender (the one who must work very hard to keep the team from conceding), in the years 7-11, and this helped me branch out and socialize. Again, this required weekly hour-and-a-half sessions.
 
-
 </div>
+<img src='/Projects\images\other\activities1\Football.jpg' class="ExperienceImageBigger">
 </div>

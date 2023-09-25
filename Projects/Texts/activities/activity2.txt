@@ -1,11 +1,14 @@
 <div class=WEXtitle>Parkrun</div>
-<h1 class="highlighted-points">parkrun</h1>
+<h1 class="highlighted-points">Running</h1>
 
 
 
 <div class='text-with-image'>
 <div class='text-float-left'>
-abc
+From the ages 9 to 14, I had been running in the Parkrun. Parkrun is a 5k run that happens weekly on Saturdays, or for the kids, a 2k on Sunday. Its a great way to meet other fellow runners and try to beat each other in a laid back, relaxed way.
+
+When I started Parkrun, I wanted to get sub-25 mins 5k, from my times of around 30 minutes for a 5k. And so I would attend Parkrun weekly, and over the course of a couple years I knocked that time down to about 21 minutes, smashing my target and improving my fitness greatly.
 
 </div>
+<img src='/Projects\images\other\activities2\parkrun1.jpg' class="ExperienceImageBigger">
 </div>
