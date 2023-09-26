@@ -19,6 +19,9 @@ function setupChildClick(children,buttonName){
     const childButton=document.getElementById(childName);
     hideChildButtonAndReveal(childButton);
     function buttonClick(){
+      highlightedButton=childButton;
+      console.log(childName);
+      reapplyHoverOff(buttonName);
       resetChildButtonSize(buttonName);
       childButton.style.transform='scaleX(1.5) scaleY(1.5)';
       childButton.removeEventListener('mouseleave',buttonHoverOff);
@@ -48,6 +51,15 @@ function resetChildButtonSize(buttonName){
   })
 }
 
+
+function reapplyHoverOff(buttonName){
+
+  buttonsFunctions[buttonName][1].forEach(buttonActions=>{
+    let [button,click,hoverOn,hoverOff]=buttonActions;
+    button.removeEventListener('mouseleave',hoverOff);
+    button.addEventListener('mouseleave',hoverOff);
+  })
+}
 
 
 function hideChildButtonAndReveal(button){
@@ -113,7 +125,7 @@ function findDifference(parentButton){
 
 function translateButtons(name,button,amount,hideChildren){
   if (hideChildren){
-  
+    highlightedButton='';
     toggleParentButtons(name,true)
     toggleChildButtons(name,true);
 
@@ -160,12 +172,6 @@ function translateButtons(name,button,amount,hideChildren){
   }
 }
 
-/*
-if (removeHover){
-  childButton.onmouseover = '';
-  childButton.onmouseout = '';
-}else{
-  */
 
 function changeParentButtons(state){
   wexButton.style.visibility=state;
@@ -248,6 +254,19 @@ function hideChildButtons(childNames){
 
 
 function hoverOverButton(button,colour) { 
+ 
+  try {
+    if (highlightedButton.style.transform.includes('scaleX(1.5) scaleY(1.5)')){
+      console.log(highlightedButton.style.transform);
+      highlightedButton.style.transform=
+      highlightedButton.style.transform
+      .replace('scaleX(1.5) scaleY(1.5)','scaleX(1) scaleY(1)');
+      console.log(highlightedButton.style.transform);
+    }else{
+      highlightedButton.style.transform+='scaleX(1) scaleY(1)';
+    }
+  } catch (error) {}
+ 
   if (button.style.transform==='none'){
     button.style.transform='scaleX(1.5) scaleY(1.5)';
   }
@@ -261,6 +280,15 @@ function hoverOverButton(button,colour) {
 
 
 function hoverOffButton(button) {
+  try {
+    if (highlightedButton.style.transform.includes('scaleX(1) scaleY(1)')){
+      highlightedButton.style.transform=highlightedButton.style.transform
+      .replace('scaleX(1) scaleY(1)','scaleX(1.5) scaleY(1.5)');
+    }else{
+      highlightedButton.style.transform+='scaleX(1.5) scaleY(1.5)';
+    }
+  } catch (error) {}
+ 
   if (button.style.transform.includes('scaleX(1.5) scaleY(1.5)') 
   && !hideChildren
   ||button.classList.contains('button-child')){
@@ -314,6 +342,8 @@ let middleButtonLeft;
 let middleButtonWidth;
 
 let buttons;
+
+let highlightedButton;
 
 const writingSpace=document.querySelector('.writing-space');
 

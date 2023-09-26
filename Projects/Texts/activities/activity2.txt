@@ -10,5 +10,18 @@ From the ages 9 to 14, I had been running in the Parkrun. Parkrun is a 5k run th
 When I started Parkrun, I wanted to get sub-25 mins 5k, from my times of around 30 minutes for a 5k. And so I would attend Parkrun weekly, and over the course of a couple years I knocked that time down to about 21 minutes, smashing my target and improving my fitness greatly.
 
 </div>
-<img src='/Projects\images\other\activities2\parkrun1.jpg' class="ExperienceImageBigger">
+<img src='/Projects\images\other\activities2\running.jpg' class="ExperienceImageBigger">
+</div>
+
+
+<h1 class="highlighted-points">Volunteering</h1>
+<div class='text-with-image'>
+<div class='text-float-left'>
+Additionally, I volunteered at Parkrun for about 3 months, doing tasks such as timing runners, logging people on and marshalling. This proved to be a very enriching experience, as I would wake up at 7:30 on Saturdays, rain or shine, and be able to talk and meet many of the parkrunners after or whilst the run.
+
+Additionally, as I didn't know how to do the tasks that I was volunteering for, I was being taught how to time, how to marshal and other volunteering task, every time I went out to Parkrun.
+
+As a whole, I am happy that I volunteered for Parkrun as I feel like I am giving back to the organisation that shaped me and more importantly, my mentality.
+</div>
+<img src='/Projects\images\other\activities2\volunteering.jpg' class="ExperienceImageBigger">
 </div>
