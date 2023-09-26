@@ -20,7 +20,6 @@ function setupChildClick(children,buttonName){
     hideChildButtonAndReveal(childButton);
     function buttonClick(){
       highlightedButton=childButton;
-      console.log(childName);
       reapplyHoverOff(buttonName);
       resetChildButtonSize(buttonName);
       childButton.style.transform='scaleX(1.5) scaleY(1.5)';
@@ -257,11 +256,9 @@ function hoverOverButton(button,colour) {
  
   try {
     if (highlightedButton.style.transform.includes('scaleX(1.5) scaleY(1.5)')){
-      console.log(highlightedButton.style.transform);
       highlightedButton.style.transform=
       highlightedButton.style.transform
       .replace('scaleX(1.5) scaleY(1.5)','scaleX(1) scaleY(1)');
-      console.log(highlightedButton.style.transform);
     }else{
       highlightedButton.style.transform+='scaleX(1) scaleY(1)';
     }
