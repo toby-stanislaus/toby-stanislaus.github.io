@@ -34,6 +34,7 @@ body{
   width:100% -1px;
   padding:2px;
   overflow: hidden;
+  
 }
 
 .titleText{
@@ -77,4 +78,7 @@ body{
   white-space: pre-wrap;
 }
 
-
+.highlighted-points{
+  font-size:40px;
+  color:rgb(241, 190, 131);
+}

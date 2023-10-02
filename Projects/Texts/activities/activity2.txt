@@ -23,5 +23,5 @@ Additionally, as I didn't know how to do the tasks that I was volunteering for, 
 
 As a whole, I am happy that I volunteered for Parkrun as I feel like I am giving back to the organisation that shaped me and more importantly, my mentality.
 </div>
-<img src='/Projects\images\other\activities2\volunteering.jpg' class="ExperienceImageBigger">
+<img src='/Projects\images\other\activities2\volunteering.JPG' class="ExperienceImageBigger">
 </div>

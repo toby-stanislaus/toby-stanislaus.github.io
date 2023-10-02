@@ -103,10 +103,7 @@
   float:left;
 }
 
-.highlighted-points{
-  font-size:40px;
-  color:rgb(241, 190, 131);
-}
+
 
 
 
@@ -129,6 +126,10 @@
 .logo-image-python{
   width:75px;
   height:75px;
+}
+
+.logo-image-grades{
+  width:100px;
 }
 
 .logo-image-parkrun{
