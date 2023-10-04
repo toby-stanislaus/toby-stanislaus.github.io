@@ -21,7 +21,7 @@ At school, I participated in the Rugby team, as a winger (the small, quick ones)
 
 This Picture you see to the right, this was after a Year 7 tournament of which we came second of 9 schools, only narrowly losing the final game (I'm the one on the bottom right, kneeling on the ground).
 </div>
-<img src='/Projects\images\other\activities1\Rugby.jpg' class="ExperienceImageBigger">
+<img src='/Projects\images\other\activities1\Rugby.JPG' class="ExperienceImageBigger">
 </div>
 
 
