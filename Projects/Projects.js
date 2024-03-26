@@ -13,9 +13,9 @@ function makeButtons(buttonName){
 
 function setupChildClick(children,buttonName){
   let buttonsFunctions=[];
-  hideChildButtons(buttonIDs[buttonName]);
+  hideChildButtons(buttonNames[buttonName]);
 
-  buttonIDs[buttonName].forEach(childName => {
+  buttonNames[buttonName].forEach(childName => {
     const childButton=document.getElementById(childName);
     hideChildButtonAndReveal(childButton);
     function buttonClick(){
@@ -44,7 +44,7 @@ function setupChildClick(children,buttonName){
 
 
 function resetChildButtonSize(buttonName){
-  buttonIDs[buttonName].forEach(childName => {
+  buttonNames[buttonName].forEach(childName => {
     childButton=document.getElementById(childName);
     childButton.style.transform='';
   })
@@ -228,9 +228,9 @@ function changeButtonTransition(button,amount){
 
 function childButtonsTransitions(name,hideChildren){
   if (hideChildren){
-    hideChildButtons(buttonIDs[name])
+    hideChildButtons(buttonNames[name])
   }else{
-    showChildButtons(buttonIDs[name]);
+    showChildButtons(buttonNames[name]);
   }
 
 }
@@ -315,9 +315,8 @@ function removeButtonHoverEnlarge(button,childButton){
 
 
 
-const text1='Input.txt';
 const oldTitle=document.title;
-const buttonIDs={'WEX':['wex1','wex2','wex3'],
+const buttonNames={'WEX':['wex1','wex2','wex3'],
                'coding':['code1','code2','code3'],
                'activities':['activity1','activity2','activity3']};
 
@@ -340,6 +339,7 @@ let middleButtonWidth;
 
 let buttons;
 
+let highlightedButtons;
 let highlightedButton;
 
 const writingSpace=document.querySelector('.writing-space');

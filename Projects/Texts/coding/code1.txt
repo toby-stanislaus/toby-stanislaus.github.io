@@ -28,7 +28,7 @@ So, I made the horribly written code you can see to the right, which, to make de
 <h1 class="highlighted-points">Coding Quest</h1>
 There is a challenge across schools called 'Coding Quest' that is comprised of challenges that are meant for A level students, starting at the intermediate level on the first challenges ranging up to incredibly difficult challenges, with included much array manipulation, simulating the snake game, index trees and Dijykstra's algorithm. 
 
-This coding quest was only completed by two people within my school: one  year 13 going to take a CS degree at the University Level and the other being me, who would of solved every question quicker than the year 13 had I been able to be at home to complete them when they were released.
+This coding quest was only completed by two people within my school: one  year 13 going to take a CS degree at Oxford and the other being me, who would of solved every question quicker than the year 13 had I been able to be at home to complete them when they were released.
 
 At the end of the challenge, I gained 2nd place of my whole school and sixth form, whilst only being in year 10.
 </div>

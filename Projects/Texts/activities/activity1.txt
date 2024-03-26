@@ -17,13 +17,25 @@ Sailing proved to be a wonderful way to socialize with other people my age and a
 <div class='text-with-image'>
 <div class='text-float-left'>
 
-At school, I participated in the Rugby team, as a winger (the small, quick ones). This required much teamwork and grit, and we ended up on top, winning the national schools Rugby league. This meant that I needed to attend weekly practices with the team for an hour and a half, of which I would undergo alot of running, where I had to push through, for the team.
+At school, I participated in the Rugby team, as a winger (the small, quick ones). This required much teamwork and grit, and we ended up on top, winning the national schools Rugby league. This meant that I needed to attend weekly practices with the team for an hour and a half.
 
-This Picture you see to the right, this was after a Year 7 tournament of which we came second of 9 schools, only narrowly losing the final game (I'm the one on the bottom right, kneeling on the ground).
+This picture you see to the right, this was after a Year 7 tournament of which we came second of 9 schools, only narrowly losing the final game (I'm the one on the bottom right in both pictures, kneeling on the ground).
+
+And the second picture is of us finishing the season in Year 10 after winning every game (I was very happy after making a lovely break in the defence and scoring a try)
 </div>
 <img src='/Projects\images\other\activities1\Rugby.JPG' class="ExperienceImageBigger">
+
+
 </div>
 
+
+<div class='text-with-image'>
+<div class='text-float-left'>
+
+
+</div>
+<img src='/Projects\images\other\activities1\RugbyOlder.png' class="ExperienceImageBigger">
+</div>
 
 
 <h1 class="highlighted-points">Football</h1>
